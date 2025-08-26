@@ -16,7 +16,10 @@ jobs:
         with:
           api_token: ${{ secrets.LOKALISE_API_TOKEN }}
           project_id: ${{ secrets.LOKALISE_PROJECT_ID }}
-          file_format: json
+          base_lang: en
           translations_path: |
             locales/en
-          base_lang: en
+          file_format: json
+          file_ext: json
+          
+          
