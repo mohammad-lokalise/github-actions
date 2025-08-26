@@ -18,5 +18,5 @@ jobs:
           project_id: LOKALISE_PROJECT_ID
           file_format: json
           translations_path: |
-            ./
+            locales/en
           base_lang: en
