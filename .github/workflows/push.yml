@@ -2,8 +2,11 @@ name: Push to Lokalise
 on:  
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:  
-  push:  
+  build:  
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
