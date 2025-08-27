@@ -12,14 +12,15 @@ jobs:
           fetch-depth: 0
 
       - name: Push files to Lokalise
-        uses: lokalise/lokalise-push-action@v3.6.0
+        uses: lokalise/lokalise-push-action@v3.8.1
         with:
           api_token: ${{ secrets.LOKALISE_API_TOKEN }}
           project_id: ${{ secrets.LOKALISE_PROJECT_ID }}
           base_lang: en
           translations_path: |
-            locales/en
+            locale
           file_format: json
           file_ext: json
-          
-          
+          use_tag_tracking: true
+          skip_default_flags: true
+          rambo_mode: true
