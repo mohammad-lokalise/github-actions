@@ -24,3 +24,7 @@ jobs:
           use_tag_tracking: true
           skip_default_flags: true
           rambo_mode: true
+          additional_params: |
+          --convert-placeholders: true
+          --replace-modified: true
+          
