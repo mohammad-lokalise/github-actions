@@ -23,7 +23,7 @@ jobs:
           skip_include_tags: true
           additional_params: |
             {
-              "format": "json",
+              "format": "json"
             }
           always_pull_base: true
           git_commit_message: 'Update translations'
