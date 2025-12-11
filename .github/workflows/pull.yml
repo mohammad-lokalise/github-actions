@@ -20,6 +20,12 @@ jobs:
           project_id: ${{ vars.LOKALISE_PROJECT_ID }}
           translations_path: src/i18n/locales
           base_lang: en
-          file_format: json
           skip_include_tags: true
+          additional_params: |
+            {
+              "format": "json",
+            }
           always_pull_base: true
+          git_commit_message: 'Update translations'
+          pr_title: 'Update translations from Lokalise'
+          pr_body: 'This PR updates translations from Lokalise'
