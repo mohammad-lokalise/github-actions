@@ -23,4 +23,8 @@ jobs:
           file_format: json
           skip_include_tags: true
           always_pull_base: true
-          flat_naming: true
+          additional_params: |
+            {
+              "format": "json",
+              "flat_naming": true
+            }
